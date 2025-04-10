@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 174 36% 95%;
+    --foreground: 174 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 174 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 174 10% 10%;
+
+    --primary: 174 70% 30%;
+    --primary-foreground: 174 10% 98%;
+
+    --secondary: 174 30% 90%;
+    --secondary-foreground: 174 10% 10%;
+
+    --muted: 174 10% 90%;
+    --muted-foreground: 174 5% 40%;
+
+    --accent: 174 30% 85%;
+    --accent-foreground: 174 10% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 174 20% 85%;
+    --input: 174 20% 85%;
+    --ring: 174 70% 30%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 174 36% 10%;
+    --foreground: 174 10% 98%;
+
+    --card: 174 10% 15%;
+    --card-foreground: 174 10% 98%;
+
+    --popover: 174 10% 15%;
+    --popover-foreground: 174 10% 98%;
+
+    --primary: 174 70% 40%;
+    --primary-foreground: 174 10% 98%;
+
+    --secondary: 174 30% 20%;
+    --secondary-foreground: 174 10% 98%;
+
+    --muted: 174 10% 20%;
+    --muted-foreground: 174 5% 70%;
+
+    --accent: 174 30% 25%;
+    --accent-foreground: 174 10% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 174 20% 25%;
+    --input: 174 20% 25%;
+    --ring: 174 70% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-lilita {
+    font-family: var(--font-lilita-one), sans-serif;
+  }
+  .font-barriecito {
+    font-family: var(--font-barriecito), system-ui;
+  }
+  .font-permanent {
+    font-family: var(--font-permanent-marker), cursive;
+  }
+}
+
+.swiper-slide img {
+  @apply object-cover border-4 border-primary/30 rounded-lg;
+}
+
+.nutri-score {
+  @apply px-4 py-2 text-lg font-bold rounded-full inline-flex items-center justify-center;
+}
+
+.score-a {
+  @apply bg-green-500 text-white;
+}
+.score-b {
+  @apply bg-green-400 text-white;
+}
+.score-c {
+  @apply bg-yellow-400 text-black;
+}
+.score-d {
+  @apply bg-orange-400 text-white;
+}
+.score-e {
+  @apply bg-red-500 text-white;
+}
+.score-unknown {
+  @apply bg-gray-400 text-white;
+}
+
+.info-box {
+  @apply inline-block px-3 py-1 m-1 rounded-md text-white font-medium;
+}
+
+.level-low {
+  @apply bg-green-500;
+}
+.level-medium {
+  @apply bg-orange-400;
+}
+.level-high {
+  @apply bg-red-500;
+}
