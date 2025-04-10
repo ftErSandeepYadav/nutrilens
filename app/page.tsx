@@ -123,7 +123,7 @@ export default function Home() {
               <Swiper
                 modules={[Autoplay, EffectFade]}
                 effect="fade"
-                autoplay={{ delay: 1000, disableOnInteraction: false }}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
                 loop={true}
                 className="rounded-xl shadow-lg"
               >
@@ -131,21 +131,21 @@ export default function Home() {
                   <img
                     src="/bd.jpg?height=400&width=800"
                     alt="Healthy food choices"
-                    className="w-full h-[300px] md:h-[400px] object-cover"
+                    className="w-full h-[300px] md:h-[400px] object-contain"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/healthy.jpg?height=400&width=800"
                     alt="Nutrition information"
-                    className="w-full h-[300px] md:h-[400px] object-cover"
+                    className="w-full h-[300px] md:h-[400px] object-contain"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/choice.jpg?height=400&width=800"
                     alt="Healthy eating habits"
-                    className="w-full h-[300px] md:h-[400px] object-cover"
+                    className="w-full h-[300px] md:h-[400px] object-contain"
                   />
                 </SwiperSlide>
               </Swiper>
